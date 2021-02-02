@@ -1,11 +1,11 @@
 import React, { useState }  from 'react'
 import MeContainer from './MeContainer'
 import SayHelloContainer from './SayHelloContainer'
+import './Home.css';
 
 const Home = () => {
     return (
-        <div>
-            HOME Här ritar jag ut MeContainer och SayHelloContainer
+        <div className='home-container'>
             <MeContainer />
             <SayHelloContainer />
         </div>

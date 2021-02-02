@@ -1,13 +1,13 @@
 import React  from 'react'
 import Card from './Card';
+import './MeContainer.css';
 
 const MeContainer = () => {
 
     return (
         <div className='gridContainer'>
-            MECONTAINER Här kommer det va en grid (så om man klickar på blog så kommer man dit )
-            
-            <Card 
+            <div className='card-items'>
+            <Card
             title='Blog'
             imageUrl='https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/000-Online-Code-Editors.png'
             body='body body body body body body body body body body body'
@@ -27,6 +27,7 @@ const MeContainer = () => {
             body='body body body body body body body body body body body'
             path='/blog'
             />
+            </div>
         </div>
     )
 }

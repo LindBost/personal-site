@@ -1,3 +1,13 @@
 .gridContainer {
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card-items {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */ 
+    /*position: absolute; */ 
+    position: absolute; 
 }

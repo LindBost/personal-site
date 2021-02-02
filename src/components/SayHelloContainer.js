@@ -1,9 +1,10 @@
 import React from 'react'
-import './MeContainer.css'
+import './SayHelloContainer.css';
+
 
 const SayHelloContainer = () => {
     return (
-        <div>
+        <div className='hello-container'>
             SAYHELLOCONTAINER 
         </div>
     )
