@@ -1,13 +1,13 @@
 import React from 'react'
 import './Header.css';
-import hero from './assets/hero.mp4';
+import hero2 from './assets/hero2.mp4';
 
 const Header = () => {
     return (
         <div className='header'>
             <div className='heroBg'>
                 <video className='videoBg' autoPlay loop muted>
-                    <source src={hero} type='video/mp4'/>
+                    <source src={hero2} type='video/mp4'/>
                 </video>
             </div>
             <div className='heroContent'>
