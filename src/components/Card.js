@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
+import {useHistory} from 'react-router-dom';
 import './Card.css'
 
-const Card = ({ title, imageUrl, body }) => {
+const Card = ({ title, imageUrl, body, path }) => {
+
+    const history = useHistory();
+    const handleClick = useCallback(() => history.push({pathname: path}), [history]);
+
     return (
         <div className='card-container'>
             <div className='image-container'>
@@ -16,7 +21,7 @@ const Card = ({ title, imageUrl, body }) => {
                 </div>
             </div>
             <div className='btn'>
-                <button>
+                <button onClick={handleClick}>
                     <a>
                         View more
                     </a>

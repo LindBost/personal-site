@@ -1,7 +1,6 @@
 import React, { useState }  from 'react'
 import MeContainer from './MeContainer'
 import SayHelloContainer from './SayHelloContainer'
-import Card from './Card';
 
 const Home = () => {
     return (
@@ -9,11 +8,6 @@ const Home = () => {
             HOME Här ritar jag ut MeContainer och SayHelloContainer
             <MeContainer />
             <SayHelloContainer />
-{ /*           <Card 
-            title='card title'
-            imageUrl='https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/000-Online-Code-Editors.png'
-            body='body body body body body body body body body body body'
-/> */}
         </div>
     )
 }
