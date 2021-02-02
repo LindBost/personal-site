@@ -1,25 +1,67 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Header from './components/Header';
+import MeContainer from './components/MeContainer';
+import SayHelloContainer from './components/SayHelloContainer';
+import Home from './components/Home';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <Header />
+<Router>
+      <div>
+{   /*     <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/me">Me</Link>
+            </li>
+            <li>
+              <Link to="/hello">Hello</Link>
+            </li>
+          </ul>
+</nav> */}
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/me">
+            <MeContainer />
+          </Route>
+          <Route path="/hello">
+            <SayHelloContainer />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    </>
   );
 }
 
 export default App;
+
+//https://tobiasahlin.com/
+
+
+//En header med mitt namn och en rörlig bild 
+
+// en grid med en "header med texter ME"
+
+// I griden har jag sektioner med länk till gidhub, info om archery, nån blog med contentful.
+
+// längst ner en contact info say hi 
