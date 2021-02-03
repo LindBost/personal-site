@@ -1,3 +1,19 @@
-.hello-container{
-    margin: 50%;
+.hello-container {
+    margin-top: 40%;
+    padding: 1em;
+    height: 5%;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 110px;
+    margin-top: 4px;
+    margin-bottom: 25px;
+    border-bottom: solid;
+}
+
+.hello-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

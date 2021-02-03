@@ -10,6 +10,8 @@ import MeContainer from './components/MeContainer';
 import SayHelloContainer from './components/SayHelloContainer';
 import Home from './components/Home';
 import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
+import Github from './components/Github/Github';
 
 function App() {
   return (
@@ -43,6 +45,12 @@ function App() {
           <Route path="/blog">
             <Blog />
           </Route>
+          <Route path="/github">
+            <Github />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
@@ -58,10 +66,10 @@ export default App;
 //https://tobiasahlin.com/
 
 
-//En header med mitt namn och en rörlig bild 
+//En header med mitt namn och en rörlig bild X
 
 // en grid med en "header med texter ME"
 
-// I griden har jag sektioner med länk till gidhub, info om archery, nån blog med contentful.
+// I griden har jag sektioner med länk till gidhub (https://github.com/LindBost), info om archery, nån blog med contentful.
 
 // längst ner en contact info say hi 
