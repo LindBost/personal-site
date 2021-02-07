@@ -35,9 +35,10 @@ const Blog = () => {
     return (
         <div>
             <div>
-                {posts.map((fields, index) =>
-                  <BlogItem key={index} {...fields} />
-                )}
+                {posts.map((fields, index) => {
+                    console.log('fields', fields)
+                 return <BlogItem key={index} {...fields} />
+                })}
             </div>
             <div onClick={handleBack}>Tillbaka</div>
         </div>

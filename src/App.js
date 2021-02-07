@@ -12,6 +12,7 @@ import Home from './components/Home';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Github from './components/Github/Github';
+import BlogPost from './components/Blog/BlogPost';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path='/blog/:blogPost' component={BlogPost} />
           <Route path="/">
             <Home />
           </Route>
