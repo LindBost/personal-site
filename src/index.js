@@ -3,6 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as contentful from 'contentful'
+
+/*
+var client = contentful.createClient({
+  space: 'skmmc58877rx',
+  accessToken: 'umYBz9auqg6mb8Pdp-43o0D2_6ob6C-BSn2TPJvVweI' })
+
+  client.getEntries().then(entries => {
+    entries.items.forEach(entry => {
+      if(entry.fields) {
+        console.log(entry.fields)
+      }
+    })
+  })
+  */
 
 ReactDOM.render(
   <React.StrictMode>
