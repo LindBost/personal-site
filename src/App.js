@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Header from './components/Header';
 import MeContainer from './components/MeContainer';
@@ -12,7 +11,8 @@ import Home from './components/Home';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Github from './components/Github/Github';
-import BlogPost from './components/Blog/BlogPost';
+import BlogPage from './components/Blog/BlogPage';
+
 
 function App() {
   return (
@@ -43,6 +43,9 @@ function App() {
           <Route path="/hello">
             <SayHelloContainer />
           </Route>
+          <Route path='/blog/:id' render={(props) => {
+                    return ( <BlogPage {...props } /> )
+                }} />
           <Route path="/blog">
             <Blog />
           </Route>
@@ -52,7 +55,6 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path='/blog/:blogPost' component={BlogPost} />
           <Route path="/">
             <Home />
           </Route>

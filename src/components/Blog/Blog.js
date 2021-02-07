@@ -29,9 +29,6 @@ const Blog = () => {
         fetchPosts();
     }, [])
 
-        console.log('posts!', posts);
-
-
     return (
         <div>
             <div>

@@ -1,5 +1,5 @@
-import React, { useEffect, useCallback } from 'react'
-import { useHistory, Link } from 'react-router-dom';
+import React, { useCallback } from 'react'
+import { useHistory } from 'react-router-dom';
 import './Github.css';
 import githubimg from '../assets/githubimg.png';
 
