@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogContent from './BlogContent'
 import BlogNav from './BlogNav'
+import './BlogItem.css';
 
 
 const BlogItem = ({title, icon, date, path, status, content}) => {

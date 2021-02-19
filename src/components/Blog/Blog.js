@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect }  from 'react'
 import {useHistory} from 'react-router-dom';
 import * as contentful from 'contentful'
 import BlogItem from './BlogItem';
+import './Blogg.css';
 
 const Blog = () => {
 
@@ -31,13 +32,13 @@ const Blog = () => {
 
     return (
         <div>
-            <div>
+            <div className='blog-container'>
                 {posts.map((fields, index) => {
                     console.log('fields', fields)
                  return <BlogItem key={index} {...fields} />
                 })}
             </div>
-            <div onClick={handleBack}>Tillbaka</div>
+            <div className='blog-knapp' onClick={handleBack}>Tillbaka</div>
         </div>
     )
 }
