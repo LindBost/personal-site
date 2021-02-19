@@ -12,14 +12,14 @@ const MeContainer = () => {
                     <Card
                         title='Blog'
                         imageUrl='https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/000-Online-Code-Editors.png'
-                        body='body body body body body body body body body body body'
+                        body='This blog is build with contentful as CMS'
                         path='/blog'
                     />
 
                     <Card
                         title='github'
                         imageUrl='https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/Best-Code-and-Text-Editors.png'
-                        body='body body body body body body body body body body body'
+                        body='Visit my GitHub'
                         path='/github'
                     />
 
