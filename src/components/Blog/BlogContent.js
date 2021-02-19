@@ -1,5 +1,6 @@
 import React from 'react'
 import * as Markdown from 'react-markdown'
+import './BlogContent.css';
 
 const BlogContent = ({icon, title, limit, content, children}) => (
   <article className="media">
