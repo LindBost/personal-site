@@ -17,3 +17,7 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
+.hello-text {
+    border-bottom: 1px solid black;
+}
