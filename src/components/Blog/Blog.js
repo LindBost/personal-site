@@ -1,33 +1,28 @@
 import React, { useState, useCallback, useEffect }  from 'react'
 import {useHistory} from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux'
 import * as contentful from 'contentful'
 import BlogItem from './BlogItem';
 import './Blogg.css';
+import {getBlogPosts} from '../../store/blog/actions'
 
 const Blog = () => {
 
-    const [ posts, setPosts] = useState([]);
+    //update state
+    const dispatch = useDispatch();
+
+    //get from state
+    const posts = useSelector(state => state.blog.posts);
 
     const history = useHistory();
     const handleBack = useCallback(() => history.push('/'), [history]);
 
-    var client = contentful.createClient({
-        space: 'skmmc58877rx',
-        accessToken: 'umYBz9auqg6mb8Pdp-43o0D2_6ob6C-BSn2TPJvVweI' })
-      
-        const fetchPosts = () => {
-            client.getEntries().then(entries => {
-          entries.items.forEach(entry => {
-            if(entry.fields) {
-              //console.log(entry.fields)
-              setPosts(oldPosts => [...oldPosts, entry.fields])
-            }
-          })
-        })
+   const getPosts = () => {
+    dispatch(getBlogPosts());
     }
 
     useEffect(() => {
-        fetchPosts();
+    getPosts();
     }, [])
 
     return (
