@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useEffect }  from 'react'
 import {useHistory} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
-import * as contentful from 'contentful'
 import BlogItem from './BlogItem';
 import './Blogg.css';
 import {getBlogPosts} from '../../store/blog/actions'

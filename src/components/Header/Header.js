@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css';
-import hero2 from './assets/hero2.mp4';
+import hero2 from '../assets/hero2.mp4';
 
 const Header = () => {
     return (

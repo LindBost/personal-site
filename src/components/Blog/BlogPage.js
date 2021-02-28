@@ -5,8 +5,6 @@ import BlogNav from './BlogNav';
 
 const BlogPage = (props) => {
 
-    console.log('här', props)
-
     const post = props.location.state;
 
     return (

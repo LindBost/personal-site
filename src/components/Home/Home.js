@@ -1,6 +1,6 @@
 import React  from 'react'
-import MeContainer from './MeContainer'
-import SayHelloContainer from './SayHelloContainer'
+import MeContainer from '../MeContainer/MeContainer'
+import SayHelloContainer from '../Contact/SayHelloContainer'
 import './Home.css';
 
 const Home = () => {

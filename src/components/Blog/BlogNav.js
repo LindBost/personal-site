@@ -6,8 +6,7 @@ import moment from 'moment'
 import './BlogNav.css';
 
 const BlogNav = ({ to, date, label, status }) => {
-  
-    console.log('label', label);
+
   return (
     <nav className="level">
       <div className="level-right">

@@ -1,9 +1,10 @@
 import React from 'react'
 
 const StatusTag = ({status}) => {
+
     switch(status) {
       case 'IN_PROGRESS':
-        return (<span className="inProgress" style={{ marginRight: 20 }}>In Progress</span>)
+        return (<span className="inProgress" style={{ marginRight: 20, color: 'green' }}>In Progress</span>)
       case 'ARCHIVED':
         return (<span className="archived" style={{ marginRight: 20 }}>Archived</span>)
       default:

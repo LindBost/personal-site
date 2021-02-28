@@ -4,12 +4,11 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Header from './components/Header';
-import MeContainer from './components/MeContainer';
-import SayHelloContainer from './components/SayHelloContainer';
-import Home from './components/Home';
+import Header from './components/Header/Header';
+import MeContainer from './components/MeContainer/MeContainer';
+import SayHelloContainer from './components/Contact/SayHelloContainer';
+import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
-import Contact from './components/Contact/Contact';
 import Github from './components/Github/Github';
 import BlogPage from './components/Blog/BlogPage';
 
@@ -20,22 +19,6 @@ function App() {
   <Header />
 <Router>
       <div>
-{   /*     <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/me">Me</Link>
-            </li>
-            <li>
-              <Link to="/hello">Hello</Link>
-            </li>
-          </ul>
-</nav> */}
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/me">
             <MeContainer />
@@ -51,9 +34,6 @@ function App() {
           </Route>
           <Route path="/github">
             <Github />
-          </Route>
-          <Route path="/contact">
-            <Contact />
           </Route>
           <Route path="/">
             <Home />
