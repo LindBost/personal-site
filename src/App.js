@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
 import Github from './components/Github/Github';
 import BlogPage from './components/Blog/BlogPage';
+import MePage from './components/MePage/MePage';
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/github">
             <Github />
+          </Route>
+          <Route path="/me-page">
+            <MePage />
           </Route>
           <Route path="/">
             <Home />

@@ -26,8 +26,8 @@ const MeContainer = () => {
                     <Card
                         title='Me'
                         imageUrl='https://kinsta.com/wp-content/uploads/2020/04/code-review-tools.png'
-                        body='body body body body body body body body body body body'
-                        path='/blog'
+                        body='About me'
+                        path='/me-page'
                     />
                 </div>
             </div>
