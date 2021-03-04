@@ -1,7 +1,7 @@
   
 [
     {
-        "img": "./assets/archery.PNG",
+        "img": "../../../public/archery.jpg",
         "alt": "archery",
         "name": "Archery"
     },
