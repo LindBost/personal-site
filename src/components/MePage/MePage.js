@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { useHistory } from 'react-router-dom';
-import data from '../data/data.json';
+import {data} from '../data/data.js';
 
 const MePage = () => {
 

@@ -1,12 +1,13 @@
-  
-[
+import React from 'react';  
+
+export const data  = [
     {
-        "img": "../../../public/archery.jpg",
+        "img": require("../../../public/archery.jpg"),
         "alt": "archery",
         "name": "Archery"
     },
     {
-        "img": "../assets//archery.PNG",
+        "img": "../assets/archery.PNG",
         "alt": "Dog",
         "name": "Dog"
     },
@@ -21,3 +22,6 @@
         "name": "Gaming"
     }
 ]
+
+//require("../../../public/archery.jpg")
+
