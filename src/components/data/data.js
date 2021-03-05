@@ -2,7 +2,7 @@ import React from 'react';
 
 export const data  = [
     {
-        "img": require("../../../public/archery.jpg"),
+        "img": process.env.PUBLIC_URL + 'archery.jpg',
         "alt": "archery",
         "name": "Archery"
     },

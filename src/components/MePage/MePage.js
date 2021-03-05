@@ -7,7 +7,7 @@ const MePage = () => {
     const history = useHistory();
     const handleBack = useCallback(() => history.push('/'), [history]);
 
-
+console.log('kolla', process.env)
     const fetchDatazz = data;
 
     console.log('fetchDatazz', fetchDatazz)
