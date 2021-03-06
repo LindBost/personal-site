@@ -65,5 +65,17 @@ color: white;
 }
 
 .me-button {
-    
+display: flex;
+justify-content: center;
+min-width: fit-content;
+background: #0e0e0e;
+padding: 16px 40px;
+color: #fff;
+font-size: 15px;
+width: 50px;
+cursor: pointer;
+border-radius: 50px;
+margin: auto;
+margin-bottom: 50px;
+margin-top: 45px;
 }
