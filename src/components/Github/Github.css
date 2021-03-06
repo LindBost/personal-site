@@ -1,13 +1,16 @@
 .github-container{
     background-color: rgb(40, 39, 39);
     height: 750px;
+    
 }
 
-h2{
+.git-h2{
     font-size: 110px;
     margin-top: 0px;
     margin-bottom: 25px;
     border-bottom: solid;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .github-logo {

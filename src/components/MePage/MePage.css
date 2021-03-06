@@ -7,6 +7,10 @@ filter: brightness(70%);
 
 }
 
+.me-img:hover {
+    filter: brightness(100%);
+}
+
 .page-card {
 line-height: 2;
 width: 100%;
@@ -78,4 +82,10 @@ border-radius: 50px;
 margin: auto;
 margin-bottom: 50px;
 margin-top: 45px;
+}
+
+.me-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 35px;
 }

@@ -14,8 +14,9 @@ const Github = () => {
 
 
     return (
+        <div className='github-wrapper'>
             <div className='github-container'>
-            <h2>Github.</h2>
+            <h2 className='git-h2'>Github.</h2>
             <div className='github-logo'>
                 <img src={githubimg} alt='logo' />
             </div>
@@ -23,6 +24,7 @@ const Github = () => {
             <div className='knapp-group'>
                 <button className='knapp' type="button" onClick={toGithub}>To Github</button>
                 <div className='knapp'onClick={handleBack}>Tillbaka</div>
+            </div>
             </div>
             </div>
     )

@@ -4,11 +4,34 @@
     position: relative;
 }
 
+
 .card-items {
     display: flex;
     justify-content: center;
     position: absolute; 
     margin-top: 35px;
+}
+
+
+/*
+.card-items {
+    display: grid;
+    justify-content: center;
+    position: absolute; 
+    margin-top: 35px;
+}
+*/
+
+@media screen and (max-width: 1200px){
+    .card-items{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .card-items{
+    grid-template-columns: 1fr;
+}
 }
 
 h2{

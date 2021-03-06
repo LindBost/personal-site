@@ -31,7 +31,7 @@ const MePage = () => {
 
 
     return (
-        <div>
+        <div className='me-container'>
             <h2>Me.</h2>
             <div className='me-wrapper' >{fetchData()}</div>
             <div className='knapp-group'>
