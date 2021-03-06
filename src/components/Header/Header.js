@@ -12,8 +12,8 @@ const Header = () => {
             </div>
             <div className='heroContent'>
                 <div className='heroItems'>
-                    <h1 className='heroH1'>test1</h1>
-                    <p className='heroP'>test2</p>
+                    <h1 className='heroH1'>Well, hi there!</h1>
+                    <p className='heroP'>Thank you for visiting</p>
                 </div>
             </div>
         </div>
