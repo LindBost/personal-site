@@ -7,21 +7,19 @@ export const data  = [
         "name": "Archery"
     },
     {
-        "img": "../assets/archery.PNG",
+        "img": process.env.PUBLIC_URL + 'Lucas.jpg',
         "alt": "Dog",
         "name": "Dog"
     },
     {
-        "img": "../assets/archery.PNG",
-        "alt": "Hiking",
-        "name": "Hiking"
+        "img": process.env.PUBLIC_URL + 'golf.jpg',
+        "alt": "Golf",
+        "name": "Golf"
     },
     {
-        "img": "./assets/archery.PNG",
+        "img": process.env.PUBLIC_URL + 'gaming.jpg',
         "alt": "Gaming",
         "name": "Gaming"
     }
 ]
-
-//require("../../../public/archery.jpg")
 

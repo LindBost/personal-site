@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react'
 import { useHistory } from 'react-router-dom';
 import {data} from '../data/data.js';
+import './MePage.css';
 
 const MePage = () => {
 
@@ -18,7 +19,7 @@ console.log('kolla', process.env)
         {data.forEach((item, index) => {
             temp.push(
             <div className='page-card' key={index}>
-                <img src={item.img} alt={item.alt} />
+                <img className='me-img' src={item.img} alt={item.alt} />
                 <div className='page-info'>
                     <div className='text-wrap'>
                         <div>
@@ -37,7 +38,7 @@ console.log('kolla', process.env)
     return (
         <div>
             <h2>Me.</h2>
-            <div>{fetchData()}</div>
+            <div className='me-wrapper' >{fetchData()}</div>
             <div className='knapp-group'>
                 <div className='knapp' onClick={handleBack}>Tillbaka</div>
             </div>
