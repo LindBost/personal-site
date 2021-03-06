@@ -1,26 +1,34 @@
+/*
 .gridContainer {
     display: flex;
     justify-content: center;
     position: relative;
 }
+*/
 
+.gridContainer{
+min-height: 100vh;
+padding: 5rem calc((100vw - 1300px) / 2);
+}
 
+/*
 .card-items {
     display: flex;
     justify-content: center;
     position: absolute; 
     margin-top: 35px;
 }
+*/
 
 
-/*
 .card-items {
     display: grid;
-    justify-content: center;
-    position: absolute; 
-    margin-top: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 0 2rem;
 }
-*/
+
 
 @media screen and (max-width: 1200px){
     .card-items{
