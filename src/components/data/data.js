@@ -9,7 +9,7 @@ export const data  = [
     {
         "img": process.env.PUBLIC_URL + 'Lucas.jpg',
         "alt": "Dog",
-        "name": "Dog"
+        "name": "My dog Lucas"
     },
     {
         "img": process.env.PUBLIC_URL + 'golf.jpg',
@@ -19,7 +19,7 @@ export const data  = [
     {
         "img": process.env.PUBLIC_URL + 'gaming.jpg',
         "alt": "Gaming",
-        "name": "Gaming"
+        "name": "Computer games"
     }
 ]
 

@@ -8,11 +8,6 @@ const MePage = () => {
     const history = useHistory();
     const handleBack = useCallback(() => history.push('/'), [history]);
 
-console.log('kolla', process.env)
-    const fetchDatazz = data;
-
-    console.log('fetchDatazz', fetchDatazz)
-
     const fetchData = () => {
         const temp = [];
 
@@ -22,7 +17,7 @@ console.log('kolla', process.env)
                 <img className='me-img' src={item.img} alt={item.alt} />
                 <div className='page-info'>
                     <div className='text-wrap'>
-                        <div>
+                        <div className='me-title'>
                             {item.name}
                         </div>
                     </div>
@@ -40,7 +35,7 @@ console.log('kolla', process.env)
             <h2>Me.</h2>
             <div className='me-wrapper' >{fetchData()}</div>
             <div className='knapp-group'>
-                <div className='knapp' onClick={handleBack}>Tillbaka</div>
+                <div className='me-button' onClick={handleBack}>Tillbaka</div>
             </div>
         </div>
     )
@@ -48,5 +43,3 @@ console.log('kolla', process.env)
 
 
 export default MePage;
-
-//https://worldofwarcraft.com/en-gb/character/eu/dragonmaw/blinus
