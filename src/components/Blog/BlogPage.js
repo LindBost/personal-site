@@ -9,7 +9,7 @@ const BlogPage = (props) => {
 
     return (
         <div>
-            <BlogNav date={post.date} status={post.status} to='/blog' label='Gå till blog'/>
+            <BlogNav date={post.date} status={post.status} to='/blog' label='Go to blog'/>
             <BlogContent {...post}/>
         </div>
     )

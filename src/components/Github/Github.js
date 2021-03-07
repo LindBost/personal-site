@@ -20,10 +20,12 @@ const Github = () => {
             <div className='github-logo'>
                 <img src={githubimg} alt='logo' />
             </div>
-            <p className='github-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales enim id libero commodo euismod. Aenean sit amet felis iaculis, finibus urna vel, consectetur dolor. Duis id lacus non odio cursus convallis pretium ac sapien.</p>
+            <div>
+            <p className='github-text'>Please visit my Github for more projects.</p>
+            </div>
             <div className='knapp-group'>
                 <button className='knapp' type="button" onClick={toGithub}>To Github</button>
-                <div className='knapp'onClick={handleBack}>Tillbaka</div>
+                <div className='knapp'onClick={handleBack}>Back</div>
             </div>
             </div>
             </div>

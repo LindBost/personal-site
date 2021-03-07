@@ -55,11 +55,5 @@ export default App;
 
 //https://tobiasahlin.com/
 
-
-//En header med mitt namn och en rörlig bild X
-
-// en grid med en "header med texter ME"
-
-// I griden har jag sektioner med länk till gidhub (https://github.com/LindBost), info om archery, nån blog med contentful.
-
-// längst ner en contact info say hi 
+//hover animation i Me
+// I Me om jag klickar på bilden så vänder den sig om med info om varje bild 

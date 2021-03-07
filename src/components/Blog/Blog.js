@@ -32,7 +32,7 @@ const Blog = () => {
                  return <BlogItem key={index} {...fields} />
                 })}
             </div>
-            <div className='blog-knapp' onClick={handleBack}>Tillbaka</div>
+            <div className='blog-knapp' onClick={handleBack}>Back</div>
         </div>
     )
 }

@@ -15,7 +15,7 @@ const BlogItem = ({title, icon, date, path, status, content}) => {
           state: { ...data }
         }}
           status={status}
-          label='Gå till inlägg'
+          label='Go to post'
         />
       </BlogContent>
     </div>

@@ -50,4 +50,10 @@
     font-size: medium;
     margin-bottom: 2rem;
     font-weight: 400;
+    padding: 0 2rem;
+    align-items: center;
+    color: seashell;
+    text-align: center;
+    line-height: 100px;
 }
+

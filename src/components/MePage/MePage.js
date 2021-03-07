@@ -35,7 +35,7 @@ const MePage = () => {
             <h2>Me.</h2>
             <div className='me-wrapper' >{fetchData()}</div>
             <div className='knapp-group'>
-                <div className='me-button' onClick={handleBack}>Tillbaka</div>
+                <div className='me-button' onClick={handleBack}>Back</div>
             </div>
         </div>
     )
