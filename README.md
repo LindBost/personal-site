@@ -1,3 +1,12 @@
+# Intro
+
+This project is build for fun using create react-app, Redux, graphQL and Contentful as CMS.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
