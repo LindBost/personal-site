@@ -13,7 +13,7 @@ const Header = () => {
         var fetchTime = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
         var timeInInt = parseFloat(fetchTime);
 
-        if (timeInInt === 14) {
+        if (timeInInt >= 14 && timeInInt < 17) {
             console.log('God afternoon')
 
             setSendId(2);
@@ -26,7 +26,7 @@ const Header = () => {
         }
 
 
-        if (timeInInt > 15) {
+        if (timeInInt > 17) {
             console.log('Good evening')
 
             setSendId(1);
