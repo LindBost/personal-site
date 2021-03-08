@@ -12,9 +12,10 @@ const Header = () => {
 
     const getTime = () => {
         var today = new Date();
-        var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-        console.log('time', time)
-        setCurTime(time)
+
+        var fetchTime = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+        var timeInInt = parseFloat(fetchTime);
+        setCurTime(timeInInt)
     }
 
     console.log('time', currTime)
@@ -23,7 +24,19 @@ const Header = () => {
         getTime();
     }, [])
 
-    //if(currTime < Date)
+   if(currTime === 14 ) {
+    console.log('woop')
+} 
+
+if(currTime < 14) {
+    console.log('jjaaaa')
+}
+
+
+if(currTime > 14) {
+    console.log('nooo')
+}
+
 
  const GET_ONE_POST = gql`
   query GetPost {
