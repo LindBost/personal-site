@@ -14,9 +14,9 @@ const POSTS = [
 
 
 const POSTS = [
-    { someId: "1", body: "Godmorning" },
-    { someId: "2", body: "Godevening" },
-    { someId: "3", body: "Godafternoon" },
+    { someId: "1", body: "God morning" },
+    { someId: "2", body: "Good evening" },
+    { someId: "3", body: "God afternoon" },
   ];
 
 const schema = buildASTSchema(gql`
