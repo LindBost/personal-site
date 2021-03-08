@@ -7,15 +7,19 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import {configureStore} from './store/configureStore'
 import { rootReducer } from './store/rootReducer';
+import { ApolloProvider } from 'react-apollo';
+import client from './apollo';
 
 const store = configureStore(rootReducer);
 
 ReactDOM.render(
+  <ApolloProvider client={client}>
   <Provider store={store}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  </Provider>,
+  </Provider>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 

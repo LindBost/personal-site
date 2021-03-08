@@ -13,12 +13,14 @@ import Github from './components/Github/Github';
 import BlogPage from './components/Blog/BlogPage';
 import MePage from './components/MePage/MePage';
 import Footer from './components/Footer/Footer';
+import PostViewer from './PostViewer';
 
 
 function App() {
   return (
   <>
   <Header />
+  <PostViewer />
 <Router>
       <div>
         <Switch>
