@@ -1,7 +1,8 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
-import { Table } from 'reactstrap';
+
+
 
 export const GET_POSTS = gql`
   query GetPosts {
@@ -24,7 +25,18 @@ export const GET_ONE_POST = gql`
 `;
 
 export default () => (
+    <Query query={GET_ONE_POST}>
+    {({ loading, data }) => !loading && (
+            <div key={data.post.id}>
+              <h1>{data.post.someId}</h1>
+              <p>{data.post.body}</p>
+            </div>
+    )}
+  </Query>
 
+);
+
+/*
     <Query query={GET_ONE_POST}>
     {({ loading, data }) => !loading && (
       <Table>
@@ -43,6 +55,13 @@ export default () => (
       </Table>
     )}
   </Query>
+
+
+*/
+
+
+
+
     /*
   <Query query={GET_POSTS}>
     {({ loading, data }) => !loading && (
@@ -65,4 +84,3 @@ export default () => (
     )}
   </Query>
   */
-);

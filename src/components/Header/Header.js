@@ -1,8 +1,40 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Header.css';
 import hero3 from '../assets/hero3.mp4';
+import gql from 'graphql-tag';
+import { Query } from 'react-apollo';
 
 const Header = () => {
+
+    const [currTime, setCurTime] = useState();
+
+
+
+    const getTime = () => {
+        var today = new Date();
+        var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+        console.log('time', time)
+        setCurTime(time)
+    }
+
+    console.log('time', currTime)
+
+    useEffect(() => {
+        getTime();
+    }, [])
+
+    //if(currTime < Date)
+
+ const GET_ONE_POST = gql`
+  query GetPost {
+    post(id: 1) {
+      id
+      someId
+      body
+    }
+  }
+`;
+
     return (
         <div className='header'>
             <div className='heroBg'>
@@ -16,6 +48,14 @@ const Header = () => {
                     <p className='heroP'>Thank you for visiting</p>
                 </div>
             </div>
+            <Query query={GET_ONE_POST}>
+        {({ loading, data }) => !loading && (
+                <div key={data.post.id}>
+                  <h1>{data.post.someId}</h1>
+                  <p>{data.post.body}</p>
+                </div>
+        )}
+      </Query>
         </div>
     )
 }
