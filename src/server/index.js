@@ -5,14 +5,6 @@ const graphqlHTTP = require('express-graphql');
 const gql = require('graphql-tag');
 const { buildASTSchema } = require('graphql');
 
-/*
-const POSTS = [
-  { author: "John Doe", body: "Hello world" },
-  { author: "Jane Doe", body: "Hi, planet!" },
-];
-*/
-
-
 const POSTS = [
     { someId: "1", body: "God morning" },
     { someId: "2", body: "Good evening" },

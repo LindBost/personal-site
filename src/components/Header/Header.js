@@ -7,7 +7,7 @@ import { Query } from 'react-apollo';
 const Header = () => {
 
     const [currTime, setCurTime] = useState();
-
+    const [sendId, setSendId] = useState(2);
 
 
     const getTime = () => {
@@ -20,28 +20,39 @@ const Header = () => {
 
     console.log('time', currTime)
 
+    /*
+    const getReturn = () => {
+        if (currTime === 14) {
+            console.log('God afternoon')
+    
+            setSendId(2);
+        }
+    
+        if (currTime < 12) {
+            console.log('God morning')
+    
+            setSendId(0);
+        }
+    
+    
+        if (currTime > 17) {
+            console.log('Good evening')
+    
+            setSendId(1);
+        }
+    }
+*/
     useEffect(() => {
         getTime();
+        //getReturn();
     }, [])
 
-    if (currTime === 14) {
-        console.log('God afternoon')
-    }
 
-    if (currTime < 12) {
-        console.log('God morning')
-    }
-
-
-    if (currTime > 17) {
-        console.log('Good evening')
-    }
-
-    //fixa så post(id: 2) i GET_ONE_POST tar in vilken den ska välja 
+    console.log('jashdfjha', sendId)
 
     const GET_ONE_POST = gql`
   query GetPost {
-    post(id: 2) {
+    post(id: ${sendId}) {
       id
       someId
       body
@@ -61,7 +72,7 @@ const Header = () => {
                     <Query query={GET_ONE_POST}>
                         {({ loading, data }) => !loading && (
                             <div key={data.post.id}>
-                                <h1>{data.post.body}</h1>
+                                <h1 className='heroH1'>{data.post.body}</h1>
                             </div>
                         )}
                     </Query>
