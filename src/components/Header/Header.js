@@ -16,20 +16,20 @@ const Header = () => {
         if (timeInInt >= 14 && timeInInt < 17) {
             console.log('God afternoon')
 
-            setSendId(2);
+            setSendId("2");
         }
 
         if (timeInInt < 12) {
             console.log('God morning')
 
-            setSendId(2);
+            setSendId("0");
         }
 
 
         if (timeInInt > 17) {
             console.log('Good evening')
 
-            setSendId(1);
+            setSendId("1");
         }
     }
 
