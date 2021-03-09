@@ -3,9 +3,8 @@ import gql from 'graphql-tag';
 import { useQuery } from 'react-apollo';
 
 const GoodMorgingText = ({sendId}) => {
+  console.log('sendId', sendId)
 
-
-    console.log('sendId', sendId)
     const GET_ONE_POST = gql`
     query GetPost {
       post(id: ${sendId}) {

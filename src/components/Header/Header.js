@@ -22,7 +22,7 @@ const Header = () => {
         if (timeInInt < 12) {
             console.log('God morning')
 
-            setSendId(0);
+            setSendId(2);
         }
 
 
@@ -38,8 +38,6 @@ const Header = () => {
         getTime();
     }, [])
 
-
-
     return (
         <div className='header'>
             <div className='heroBg'>
@@ -49,7 +47,7 @@ const Header = () => {
             </div>
             <div className='heroContent'>
                 <div className='heroItems'>
-                    {sendId && <GoodMorgingText sendId={sendId}/>}
+                    {sendId && <GoodMorgingText sendId={sendId} />}
                     {/*<h1 className='heroH1'>Well, hi there!</h1>*/}
                     <p className='heroP'>Thank you for visiting</p>
                 </div>
