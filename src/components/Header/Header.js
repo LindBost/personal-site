@@ -26,7 +26,7 @@ const Header = () => {
         }
 
 
-        if (timeInInt > 17) {
+        if (timeInInt >= 17) {
             console.log('Good evening')
 
             setSendId("1");
