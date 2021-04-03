@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import './Github.css';
 import githubimg from '../assets/githubimg.png';
@@ -7,6 +7,9 @@ const Github = () => {
 
     const history = useHistory();
     const handleBack = useCallback(() => history.push('/'), [history]);
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      })
 
     const toGithub = () => {
         window.open('https://github.com/LindBost', "_blank")

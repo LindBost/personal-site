@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import { data } from '../data/data.js';
 import './MePage.css';
@@ -7,60 +7,30 @@ const MePage = () => {
 
     const history = useHistory();
     const handleBack = useCallback(() => history.push('/'), [history]);
-
-    /*
-    const [isActive, setActive] = useState(true)
-
-
-    console.log('FÖÖRS', isActive)
-    const turnCard = () => {
-        
-        setActive(false);
-    }
-    */
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      })
 
     const fetchData = () => {
         const temp = [];
         {
             data.forEach((item, index) => {
                 temp.push(
-                    <div className='page-card' key={index}>
-                        <img className='me-img' src={item.img} alt={item.alt} />
-                        <div className='page-info'>
-                            <div className='text-wrap'>
-                                <div className='me-title'>
-                                    {item.name}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )
-            })
-        }
 
-        /*
-        {
-            data.forEach((item, index) => {
-                temp.push(
-                    <div id={index} className= {`page-card flip-card ${isActive ? "isFlipped" : ""}`} key={index} onClick={((e) => turnCard())}>
-                        <div className='flip-card-inner'>
-                            <div className='flip-card-front'>
-                                <img className='me-img' src={item.img} alt={item.alt} />
-                                <div className='page-info'>
-                                    <div className='text-wrap'>
-                                        <div className='me-title'>
-                                            {item.name}
-                                        </div>
-                                    </div>
-                                </div>
+                    <div className="flip-box" key={index}>
+                        <div className="flip-box-inner">
+                            <div className="flip-box-front">
+                                <img className='me-img' src={item.img} alt={item.alt}/>
                             </div>
-                            <div className='flip-card-back'>massa text</div>
+                            <div className="flip-box-back">
+                                <h2 className="item-header">{item.name}</h2>
+                                <p className="item-desc">{item.desc}</p>
+                            </div>
                         </div>
                     </div>
                 )
             })
         }
-        */
 
         return temp;
     }
@@ -79,3 +49,4 @@ const MePage = () => {
 
 
 export default MePage;
+

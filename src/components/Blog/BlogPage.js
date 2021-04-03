@@ -4,7 +4,6 @@ import BlogNav from './BlogNav';
 
 
 const BlogPage = (props) => {
-
     const post = props.location.state;
 
     return (
