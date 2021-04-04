@@ -43,8 +43,6 @@ const port = process.env.PORT || 4000
 app.listen(port);
 console.log(`Running a GraphQL API server at localhost:${port}/graphql`);
 
-//https://developer.okta.com/blog/2018/10/11/build-simple-web-app-with-express-react-graphql
-
 
 /*
 playground:
@@ -62,14 +60,4 @@ query {
   }
 }
 
-*/
-
-/*
-for graphQL added/changes files:
-server/index.js - add
-PostViewer.js - add
-index.js - change
-App.js - change
-apollo.js - add
-package.json - change
 */

@@ -18,8 +18,8 @@ const SayHelloContainer = () => {
             <h1 className='hello-email'>linda-bostrom@hotmail.se</h1>
             <p className='hello-text'>I love to be creative and build things. Anything from my own projects like this page to Ikea furniture.</p>
             <div className='hello-card'>
-            <button className='knapp' type="button" onClick={toLinkedIn}>To linkedin</button>
-            <button className='knapp' type="button" onClick={toGithub}>To Github</button>
+                <button className='knapp' type="button" onClick={toLinkedIn}>To linkedin</button>
+                <button className='knapp' type="button" onClick={toGithub}>To Github</button>
             </div>
         </div>
     )
