@@ -6,6 +6,13 @@ padding: 5rem calc((100vw - 1300px) / 2);*/
 margin-bottom: 100px;
 }
 
+@media screen and (max-width: 868px){
+    .gridContainer{
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+}
+}
 
 
 .card-items {

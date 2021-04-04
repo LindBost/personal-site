@@ -30,3 +30,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 868px){
+    .hello-email{
+        font-size: medium;
+    }
+}

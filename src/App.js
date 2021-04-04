@@ -52,8 +52,3 @@ function App() {
 }
 
 export default App;
-
-//https://tobiasahlin.com/
-
-//hover animation i Me
-// I Me om jag klickar på bilden så vänder den sig om med info om varje bild 
